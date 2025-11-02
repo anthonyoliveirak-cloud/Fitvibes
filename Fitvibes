@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitVibes | Fitness & Health Lifestyle</title>
+  <style>
+    /* ==== GLOBAL STYLES ==== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1b1b1b;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #ff3d00;
+    }
+
+    header h1 {
+      color: #ff3d00;
+      font-size: 1.8em;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ff3d00;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1594737625785-c2c8b8b6d2e0?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    }
+
+    .section {
+      padding: 60px 10%;
+    }
+
+    .section h2 {
+      color: #ff3d00;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ff3d00;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .article {
+      background: #1b1b1b;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .article:hover {
+      transform: scale(1.03);
+    }
+
+    .article img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .article-content {
+      padding: 15px;
+    }
+
+    .article-content h3 {
+      color: #ff3d00;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-box {
+      background: #2a2a2a;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .affiliate-box a {
+      color: #ff3d00;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #1b1b1b;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 2px solid #ff3d00;
+    }
+
+    footer a {
+      color: #ff3d00;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FitVibes</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Transform Your Body. Elevate Your Mind.</h2>
+  </section>
+
+  <section id="blog" class="section">
+    <h2>Latest Articles</h2>
+    <div class="articles">
+      <div class="article">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07d?auto=format&fit=crop&w=800&q=80" alt="Workout tips">
+        <div class="article-content">
+          <h3>5 Morning Habits to Boost Your Energy</h3>
+          <p>Start your day with simple habits that increase your metabolism and mental focus. Learn how hydration, stretching, and mindset set the tone for a powerful day.</p>
+          <div class="affiliate-box">
+            <p>Recommended Product:</p>
+            <a href="#">Buy Energy Supplements on Amazon →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article">
+        <img src="https://images.unsplash.com/photo-1579758629939-037fdd6c7eeb?auto=format&fit=crop&w=800&q=80" alt="Nutrition">
+        <div class="article-content">
+          <h3>Top 10 High-Protein Meals</h3>
+          <p>Fuel your workouts and recover faster with these protein-packed recipes. Perfect for muscle growth and fat loss goals.</p>
+          <div class="affiliate-box">
+            <p>Try this:</p>
+            <a href="#">Protein Shakes Deals →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article">
+        <img src="https://images.unsplash.com/photo-1594737625785-c2c8b8b6d2e0?auto=format&fit=crop&w=800&q=80" alt="Gym Motivation">
+        <div class="article-content">
+          <h3>Stay Motivated on Your Fitness Journey</h3>
+          <p>Motivation fades, but discipline stays. Discover techniques to stay consistent and overcome plateaus.</p>
+          <div class="affiliate-box">
+            <p>Recommended Gear:</p>
+            <a href="#">Best Home Gym Equipment →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Have questions or collaboration ideas? Reach out!</p>
+    <p>Email: <a href="mailto:info@fitvibes.com">info@fitvibes.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 FitVibes. All rights reserved.</p>
+    <p>
+      <a href="#">Instagram</a> | 
+      <a href="#">YouTube</a> | 
+      <a href="#">TikTok</a>
+    </p>
+  </footer>
+</body>
+</html>
